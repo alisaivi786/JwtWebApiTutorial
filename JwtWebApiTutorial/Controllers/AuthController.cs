@@ -23,7 +23,7 @@ namespace JwtWebApiTutorial.Controllers
         }
 
         [HttpGet, Authorize]
-        public ActionResult<string> GetMe()
+        public ActionResult<string> Get()
         {
             var userName = _userService.GetMyName();
             return Ok(userName);
